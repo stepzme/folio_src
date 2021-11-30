@@ -22,15 +22,19 @@
 }
 
 .hero__h1 {
-    font-size: 250px;
-    line-height: 180px;
+    line-height: 72%;
     color: #000;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
+    --minFontSize: 112px;
+    --maxFontSize: 250px;
+    --scaler: 10vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
 .paragraphDefault {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 34px;
+    max-width: 660px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #90949A;
