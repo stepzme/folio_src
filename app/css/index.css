@@ -54,23 +54,58 @@ body {
 
 .sidebar {
     position: sticky;
-    top: 0;
+    top: 100px;
     align-self: flex-start;
     display: flex;
     flex-flow: column nowrap;
     width: 20%;
-    height: auto;
 }
 
 .categories {
     padding: 0;
     list-style-type: none;
+    border-left: 2px solid #f7f7f7;
+    margin-bottom: 100px;
 }
 
 .categories > li {
     font-size: 28px;
     line-height: 36px;
-    padding: 32px 0;
+    padding: 32px 0 32px 32px;
+}
+
+.categories > li:nth-child(2) {
+    padding: 0 0 32px 32px;
+}
+
+.categories > li:last-child {
+    padding: 32px 0 0px 32px;
+}
+
+.categories > li.active > a {
+    color: #000;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.categories > li > a {
+    color: #A9AEB2;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    max-height: 36px;
+    background: #000;
+    border: 0px solid transparent;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    margin: 0;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -142,6 +177,10 @@ body {
     transition: all .2s ease-in-out;
 }
 
+.paddingLeft {
+    padding-left: 34px;
+}
+
 
 
 @media only screen and (max-width: 1199px) {
@@ -162,8 +201,34 @@ body {
 
     .categories > li {
         font-size: 18px;
-        line-height: 21px;
-        padding: 32px 0;
+        line-height: 21px; 
+        padding: 24px 0 24px 24px;
+    }
+
+    .categories > li:nth-child(2) {
+        padding: 60px 0 24px 24px;
+    }
+    
+    .categories > li:last-child {
+        padding: 24px 0 0px 24px;
+    }
+
+    .indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        max-height: 21px;
+        background: #000;
+        border: 0px solid transparent;
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
+        margin: 0;
+    }
+
+    .paddingLeft {
+        padding-left: 26px;
     }
 
 }

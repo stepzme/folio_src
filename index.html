@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="app/css/header.css">
     <link rel="stylesheet" href="app/css/index.css">
     <link rel="stylesheet" href="app/css/footer.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
     
     <title>Stepz / UI/UX Designer</title>
 </head>
@@ -35,46 +34,49 @@
             <div class="projects__wrapper">
             <div class="sidebar">
                 <ul class="categories">
-                    <li>E-commerce</li>
-                    <li>FinTech</li>
-                    <li>SaaS</li>
-                    <li>Gambling</li>
+                    <hr class="indicator">
+                    <li id="s1"><a href="#s1" class="linkNav">E-commerce</a></li>
+                    <li id="s2"><a href="#s2" class="linkNav">FinTech</a></li>
+                    <li id="s3"><a href="#s3" class="linkNav">SaaS</a></li>
+                    <li id="s4"><a href="#s4" class="linkNav">Gambling</a></li>
                 </ul>
-                <a href="" class="linkText">View all</a>
+                <a href="" class="linkText paddingLeft">View all</a>
             </div>
         
             <div class="projects__grid">
 
-                <div class="grid__item">
+                <div id="1" idx="1" class="grid__item">
                     <a href="#" class="linkBlock"></a>
                     <img src="app/img/cover.png" class="project__cover" alt="Alt description">
                     <div class="projectDescription">
-                        <h6>Project title</h6>
+                        <h6 class="projectTitle">Project title</h6>
                         <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
                     </div>
                 </div>
 
-                <div class="grid__item">
+                <div  id="2" idx="2" class="grid__item">
                     <a href="#" class="linkBlock"></a>
                     <img src="app/img/cover.png" class="project__cover" alt="Alt description">
                     <div class="projectDescription">
-                        <h6>Project title</h6>
+                        <h6 class="projectTitle">Project title</h6>
                         <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
                     </div>
                 </div>
-                <div class="grid__item">
+
+                <div id="3" idx="3" class="grid__item">
                     <a href="#" class="linkBlock"></a>
                     <img src="app/img/cover.png" class="project__cover" alt="Alt description">
                     <div class="projectDescription">
-                        <h6>Project title</h6>
-                        <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
+                        <h6 class="projectTitle">Project title</h6>
+                        <p cclass="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
                     </div>
                 </div>
-                <div class="grid__item">
+
+                <div id="4" idx="4" class="grid__item">
                     <a href="#" class="linkBlock"></a>
                     <img src="app/img/cover.png" class="project__cover" alt="Alt description">
                     <div class="projectDescription">
-                        <h6>Project title</h6>
+                        <h6 class="projectTitle">Project title</h6>
                         <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
                     </div>
                 </div>
@@ -88,9 +90,11 @@
 
     <footer w3-include-html="footer.html" class="footer"></footer>
 
-<script>
-w3.includeHTML();
-</script>
-
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>w3.includeHTML();</script>
+<script src="app/js/jq.js"></script>
+<script src="app/js/jquery.formstyler.min.js"></script>
+<script src="app/js/jquery.ui.touch-punch.min.js"></script>
+<script src="app/js/main.js"></script>
 </body>
 </html>
