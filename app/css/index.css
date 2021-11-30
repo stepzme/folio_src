@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     width: 90%;
-    overflow-x: hidden;
+    /** overflow: hidden; **/
 }
 
 .defaultContainer > div {
@@ -20,7 +20,7 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
-    padding: 10vh 0;
+    padding: 20vh 0;
     height: auto;
 }
 
@@ -39,3 +39,134 @@ body {
     height: 90%;
     width: auto;
 }
+
+
+.projects {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 10vh 0;
+    height: auto;
+}
+
+/** SIDEBAR START**/
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 20%;
+    height: auto;
+}
+
+.categories {
+    padding: 0;
+    list-style-type: none;
+}
+
+.categories > li {
+    font-size: 28px;
+    line-height: 36px;
+    padding: 32px 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    
+    .sidebar {
+        display: none;
+    }
+}
+
+
+
+/** SIDEBAR END**/
+
+.projects__grid {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+}
+
+.projects__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.grid__item {
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.grid__item > .linkBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.projectDescription {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.project__cover {
+    width: 100%;
+    height: auto;
+    min-width: 343px;
+    margin-bottom: 24px;
+    border-radius: 48px;
+}
+
+
+.linkText {
+    font-size: 24px;
+    line-height: 36px;
+    color: #A9AEB2;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.linkText:hover {
+    color: #000;
+    transition: all .2s ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+    
+    .projects__grid {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1440px) {
+    
+    .linkText {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .categories > li {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 32px 0;
+    }
+
+}
+
+
+
