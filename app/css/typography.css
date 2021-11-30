@@ -11,4 +11,27 @@
     font-family: 'CraftworkGrotesk', Fallback, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+}
+
+.hero__h4 {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #C3C8CC;
+}
+
+.hero__h1 {
+    font-size: 250px;
+    line-height: 180px;
+    color: #000;
+    margin-bottom: 100px;
+}
+
+.paragraphDefault {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #90949A;
 }

@@ -1,0 +1,22 @@
+.header__menu {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.menu_item {
+    padding: 30px 20px;
+    color: #A9AEB2;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.menu_item:hover {
+    transition: all .2s ease-in-out;
+    color: #000;
+}
+

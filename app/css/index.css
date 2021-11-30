@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.defaultContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    overflow-x: hidden;
+}
+
+.defaultContainer > div {
+    width: 100%
+}
+
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #933FFF;
+    margin-bottom: 40px;
+}
+
+.memoji {
+    height: 90%;
+    width: auto;
+}

@@ -1,0 +1,9 @@
+.footer__menu {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
