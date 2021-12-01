@@ -6,4 +6,6 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: stretch;
+    padding-bottom: 40px;
 }
+

@@ -59,6 +59,26 @@ h2 {
     max-width: 40vw;
 }
 
+.projectTitle {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+
+/** Color text animation 
+.gTeCJB {
+    animation: 1000ms linear 1s infinite alternate-reverse none running jVHlvv;
+}
+
+<style>
+.rzUOS {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(0deg, rgb(255, 255, 226) 0.35%, rgb(255, 177, 137) 50.34%, rgb(199, 33, 255) 100.35%) repeat-y text;
+}
+
+**/
+
 @media only screen and (max-width: 1800px) {
     
     h2 {

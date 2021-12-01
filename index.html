@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="app/css/header.css">
     <link rel="stylesheet" href="app/css/index.css">
     <link rel="stylesheet" href="app/css/footer.css">
-    
+    <script src="https://kit.fontawesome.com/42c3c3ecfd.js" crossorigin="anonymous"></script>
     <title>Stepz / UI/UX Designer</title>
 </head>
 <body>
@@ -30,58 +30,54 @@
         <div class="projects">
 
             <h2>High experience in fastest-growing digital industries</h2>
+
+            <div class="industriesText">
+                <p class="headingPromo">FinTech</p>
+                <p class="headingPromo">Crypto</p>
+                <p class="headingPromo">Augmented reality</p>
+                <p class="headingPromo">E-commerce</p>
+                <p class="headingPromo">SaaS</p>
+            </div>
             
             <div class="projects__wrapper">
-            <div class="sidebar">
-                <ul class="categories">
-                    <hr class="indicator">
-                    <li id="s1"><a href="#s1" class="linkNav">E-commerce</a></li>
-                    <li id="s2"><a href="#s2" class="linkNav">FinTech</a></li>
-                    <li id="s3"><a href="#s3" class="linkNav">SaaS</a></li>
-                    <li id="s4"><a href="#s4" class="linkNav">Gambling</a></li>
-                </ul>
-                <a href="" class="linkText paddingLeft">View all</a>
-            </div>
-        
-            <div class="projects__grid">
-
-                <div id="1" idx="1" class="grid__item">
+                <!-- Large item start-->
+                <div class="grid__item_large">
                     <a href="#" class="linkBlock"></a>
-                    <img src="app/img/cover.png" class="project__cover" alt="Alt description">
+                    <div class="coverContainer">
+                        <img src="app/img/cover.png" class="project__cover" alt="Alt description">
+                    </div>
                     <div class="projectDescription">
                         <h6 class="projectTitle">Project title</h6>
                         <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
                     </div>
                 </div>
+                <!-- Large item end-->
+                <div class="projects__grid">
 
-                <div  id="2" idx="2" class="grid__item">
-                    <a href="#" class="linkBlock"></a>
-                    <img src="app/img/cover.png" class="project__cover" alt="Alt description">
-                    <div class="projectDescription">
-                        <h6 class="projectTitle">Project title</h6>
-                        <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
+                    <div class="grid__row">
+                        <div class="grid__item_small">
+                            <a href="#" class="linkBlock"></a>
+                            <div class="coverContainer">
+                                <img src="app/img/cover.png" class="project__cover" alt="Alt description">
+                            </div>
+                            <div class="projectDescription">
+                                <h6 class="projectTitle">Project title</h6>
+                                <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
+                            </div>
+                        </div>
+                        <div class="grid__item_small">
+                            <a href="#" class="linkBlock"></a>
+                            <div class="coverContainer">
+                                <img src="app/img/cover.png" class="project__cover" alt="Alt description">
+                            </div>
+                            <div class="projectDescription">
+                                <h6 class="projectTitle">Project title</h6>
+                                <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div id="3" idx="3" class="grid__item">
-                    <a href="#" class="linkBlock"></a>
-                    <img src="app/img/cover.png" class="project__cover" alt="Alt description">
-                    <div class="projectDescription">
-                        <h6 class="projectTitle">Project title</h6>
-                        <p cclass="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
-                    </div>
                 </div>
-
-                <div id="4" idx="4" class="grid__item">
-                    <a href="#" class="linkBlock"></a>
-                    <img src="app/img/cover.png" class="project__cover" alt="Alt description">
-                    <div class="projectDescription">
-                        <h6 class="projectTitle">Project title</h6>
-                        <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
-                    </div>
-                </div>
-
-            </div>
             </div>
             
         </div>
@@ -92,9 +88,6 @@
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script>w3.includeHTML();</script>
-<script src="app/js/jq.js"></script>
-<script src="app/js/jquery.formstyler.min.js"></script>
-<script src="app/js/jquery.ui.touch-punch.min.js"></script>
 <script src="app/js/main.js"></script>
 </body>
 </html>
