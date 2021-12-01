@@ -198,13 +198,8 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 100px;
-}
-
-.headingPromo {
-    font-size: 64px;
-    color: #DCDCDC;
+    height: 100px;
+    margin-bottom: 150px;
 }
 
 .x24 { 
@@ -220,22 +215,18 @@ body {
 }
 
 .behance:hover { 
-    color: #1769ff; 
     background: #f7f7f7;
     transition: all .2s ease-in-out;
 }
 .dribbble:hover { 
-    color: #ea4c89; 
     background: #f7f7f7;
     transition: all .2s ease-in-out;
 }
 .instagram:hover { 
-    color: #833ab4; 
     background: #f7f7f7;
     transition: all .2s ease-in-out;
 }
 .telegram:hover { 
-    color: #0088cc; 
     background: #f7f7f7;
     transition: all .2s ease-in-out;
 }
