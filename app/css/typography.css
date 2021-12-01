@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: 'CraftworkGrotesk';
-    src: url('/app/fonts/CraftworkGrotesk-Medium.woff2') format('woff2'),
-         url('/app/fonts/CraftworkGrotesk-Medium.woff') format('woff'),
-         url('/app/fonts/CraftworkGrotesk-Medium.ttf') format('truetype');
+    src: url('app/fonts/CraftworkGrotesk-Medium.woff2') format('woff2'),
+         url('app/fonts/CraftworkGrotesk-Medium.woff') format('woff'),
+         url('app/fonts/CraftworkGrotesk-Medium.ttf') format('truetype');
 }
 
 * {
