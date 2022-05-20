@@ -1,52 +1,57 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'CraftworkGrotesk';
-    src: url('app/fonts/CraftworkGrotesk-Medium.woff2') format('woff2'),
-         url('app/fonts/CraftworkGrotesk-Medium.woff') format('woff'),
-         url('app/fonts/CraftworkGrotesk-Medium.ttf') format('truetype');
+    font-family: 'pp_object_sansheavy';
+    src: url('../fonts/ppobjectsans-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/ppobjectsans-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_object_sansregular';
+    src: url('../fonts/ppobjectsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ppobjectsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 * {
-    font-family: 'CraftworkGrotesk', Fallback, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 18px;
+    font-family: 'pp_object_sansregular', sans-serif;
 }
 
-.hero__h4 {
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    color: #C3C8CC;
-}
-
-.hero__h1 {
-    line-height: 72%;
+.headingLarge {
+    --minFontSize: 40px;
+    --maxFontSize: 180px;
+    --scaler: 10vw;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: -0.04em;
     color: #000;
     margin-bottom: 120px;
-    --minFontSize: 112px;
-    --maxFontSize: 250px;
-    --scaler: 10vw;
     font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
-.paragraphCentered {
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 660px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #90949A;
+.projectTitle {
+    --minFontSize: 40px;
+    --maxFontSize: 180px;
+    --scaler: 10vw;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    margin-bottom: 40px;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
-.paragraphDefault {
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 660px;
+.projectDescription {
+    --minFontSize: 18px;
+    --maxFontSize: 24px;
+    --scaler: 2vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
     text-align: left;
     letter-spacing: -0.02em;
-    color: #90949A;
 }
 
 h2 { 
@@ -59,15 +64,27 @@ h2 {
     max-width: 40vw;
 }
 
-
-.headingPromo {
-    --minFontSize: 32px;
-    --maxFontSize: 64px;
+.hero__paragraph { 
+    --minFontSize: 18px;
+    --maxFontSize: 24px;
     --scaler: 2vw;
     font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
-    color: #DCDCDC;
-    word-wrap: normal;
-    margin: 40px 40px 40px 0;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    margin: 0;
+    max-width: 50vw;
+}
+
+.paragraph { 
+    --minFontSize: 18px;
+    --maxFontSize: 24px;
+    --scaler: 2vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    margin: 0;
+    max-width: 50vw;
+    padding-bottom: 8px;
 }
 
 .projectTitle {

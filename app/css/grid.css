@@ -1,0 +1,126 @@
+/** Grid items START **/
+
+.projects {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.projectDescriptionTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row;
+    padding-left: 40px;
+    padding-top: 40px;
+    column-gap: 40px;
+}
+
+.projectDescriptionBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.project__cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    transition: all 3s ease-in-out;
+}
+
+.project__cover:hover {
+    transform: scale(1.2);
+    transition: all 3s ease-in-out;
+}
+
+.grid__item_large {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    min-width: 343px;
+}
+
+.grid__item_large > .linkBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.grid__item_large > .coverContainer {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+    overflow: hidden;
+    align-content: center;
+}
+
+.grid__item_small {
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+    width: 48%;
+    height: 80vh;
+    min-width: 343px;
+    margin-bottom: 100px;
+}
+
+.grid__item_small > .linkBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.grid__item_small > .coverContainer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+    overflow: hidden;
+    align-content: center;
+}
+
+.grid__row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/** Grid items END **/
+
+@media only screen and (max-width: 1199px) {
+    
+    .projects__grid {
+        width: 100%;
+    }
+
+    .grid__item_small {
+        display: flex;
+        position: relative;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: 80vh;
+        min-width: 343px;
+        margin-bottom: 100px;
+    }
+
+}

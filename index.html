@@ -4,55 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app/css/reset.css">
     <link rel="stylesheet" href="app/css/normalize.css">
     <link rel="stylesheet" href="app/css/typography.css">
     <link rel="stylesheet" href="app/css/header.css">
     <link rel="stylesheet" href="app/css/index.css">
     <link rel="stylesheet" href="app/css/footer.css">
+    <link rel="stylesheet" href="app/css/grid.css">
     <script src="https://kit.fontawesome.com/42c3c3ecfd.js" crossorigin="anonymous"></script>
-    <title>Stepz / UI/UX Designer</title>
+    <title>Duo® / Digital design unit</title>
 </head>
 <body>
-    <header w3-include-html="header.html" class="header"></header>
+    <div class="cursor">
+        <div class="cursor-outer"></div>
+        <div class="cursor-inner"></div>
+    </div>
 
-    <div class="defaultContainer">
 
+
+    <div class="globalWrapper">
+        <header w3-include-html="header.html" class="header__menu header__menu_light"></header>
         <div class="hero">
-            <div class="avatar">
-                <img src="app/img/smile.webp" class="memoji">
+            <div class="hero__cellTop">
+                <p class="headingLarge">Design & build<br>better universe</p>
             </div>
-            <h4 class="hero__h4">Hi, I'm</h4>
-            <h1 class="hero__h1">stepz</h1>
-            <p class="paragraphCentered">User Interface and Experience designer based in Saint Petersburg. Work with empathy and desire to make the digital world a better place</p>
+            <div class="hero__cellBottom">
+                <div class="cell_portraits">
+                    <img class="portrait" src="app/img/pic_1.png" alt="Stephen's portrait">
+                    <img class="portrait" src="app/img/pic_2.png" alt="Alina's portrait">
+                </div>
+                <p class="hero__paragraph">We are Duo — tiny design unit, that helps products, both large and small, find yourself in digital space.</p>
+            </div>
         </div>
+    
 
-        <div class="projects">
-
-            <h2>High experience in fastest-growing digital industries</h2>
-
-            <div class="industriesText">
-                <p class="headingPromo">FinTech</p>
-                <p class="headingPromo">Crypto</p>
-                <p class="headingPromo">E-commerce</p>
-                <p class="headingPromo">SaaS</p>
-            </div>
-            
-            <div class="projects__wrapper">
-                <!-- Large item start-->
+        
+            <div class="projects">
+                <a href="#">
                 <div class="grid__item_large">
-                    <a href="#" class="linkBlock"></a>
+                    
                     <div class="coverContainer">
-                        <img src="app/img/cover.png" class="project__cover" alt="Alt description">
+                        <img src="app/img/covers/morpheus.jpg" class="project__cover" alt="Morpheus - UX/UI">
                     </div>
-                    <div class="projectDescription">
-                        <h6 class="projectTitle">Project title</h6>
-                        <p class="paragraphDefault">Projects deription maybe 2 or 3 strings</p>
+                    <div class="projectDescriptionTop">
+                        <p class="paragraph white">April 2022</p>
+                        <p class="paragraph white opacity-08">~391 hours</p>
+                    </div>
+                    <div class="projectDescriptionBottom">
+                        <p class="headingLarge white">Morpheus</p>
+                        <p class="paragraph white">Interface design</p>
                     </div>
                 </div>
-                <!-- Large item end-->
-                <div class="projects__grid">
+                </a>
+                
+                <a href="#">
+                    <div class="grid__item_large">
+                        
+                        <div class="coverContainer">
+                            <img src="app/img/covers/fleetdeck.jpg" class="project__cover" alt="Fleetdeck">
+                        </div>
+                        <div class="projectDescriptionTop">
+                            <p class="paragraph white">January 2022</p>
+                            <p class="paragraph white opacity-08">~265 hours</p>
+                        </div>
+                        <div class="projectDescriptionBottom">
+                            <p class="headingLarge white">Fleetdeck</p>
+                            <p class="paragraph white">User experience</p>
+                            <p class="paragraph white">Interface design</p>
+                            <p class="paragraph white">Branding</p>
+                        </div>
+                    </div>
+                </a>
 
+                <a href="#">
+                    <div class="grid__item_large black">
+                        
+                        <div class="coverContainer">
+                            <img src="app/img/covers/genier.jpg" class="project__cover" alt="Genier">
+                        </div>
+                        <div class="projectDescriptionTop">
+                            <p class="paragraph">November 2021</p>
+                            <p class="paragraph opacity-08">~189 hours</p>
+                        </div>
+                        <div class="projectDescriptionBottom">
+                            <p class="headingLarge">Genier</p>
+                            <p class="paragraph">Interface design</p>
+                            <p class="paragraph">Branding</p>
+                        </div>
+                    </div>
+                </a>
+            
+
+                <!--
+                <div class="projects__grid">
                     <div class="grid__row">
                         <div class="grid__item_small">
                             <a href="#" class="linkBlock"></a>
@@ -77,11 +120,16 @@
                     </div>
 
                 </div>
+                 -->
+
             </div>
             
         </div>
 
-    </div>
+        <div class="cursor" id="cursor"></div>
+
+   
+
 
     <footer w3-include-html="footer.html" class="footer"></footer>
 
