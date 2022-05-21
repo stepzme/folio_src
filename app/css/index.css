@@ -1,26 +1,24 @@
-* {
+html {
     cursor: none;
     scroll-behavior: smooth;
 }
+
 
 body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     overscroll-behavior: none;
+    transition: 0.3s ease-out;
+    max-width: 100%;
+    width: 100%;
 }   
 
-.container {
+.globalWrapper {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    overflow: hidden;
     row-gap: 100px;
-}
-
-section {
-    padding: 0 40px;
-    height: auto;
 }
 
 .fullscreen {
@@ -101,7 +99,6 @@ section {
 
 .industryItem {
     margin-top: 40px;
-    width: 40%;
 }
 
 .gap-10 {
@@ -117,7 +114,11 @@ section {
 }
 
 .sliderItem {
-    width: 80vw;
+    width: auto;
+}
+
+.sliderItem:last-child {
+    width: 97vw;
 }
 
 
@@ -176,3 +177,51 @@ section {
 .opacity-08 {
     opacity: .8;
 }
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+
+/** GSAP **/
+  
+  .slider:not(#sectionPin) {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 0;
+    margin: auto;
+    place-items: center;
+  }
+  
+  
+  
+  
+  #sectionPin {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    left: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+  }
+  
+  .pin-wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10vw;
+    padding: 0 40px;
+  }
+  .pin-wrap > * {
+    min-width: 60vw;
+  }
+  
