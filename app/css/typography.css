@@ -34,16 +34,19 @@
     font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
-.projectTitle {
+.headingMedium {
     --minFontSize: 40px;
     --maxFontSize: 180px;
     --scaler: 10vw;
     line-height: 110%;
     font-weight: 400;
     letter-spacing: -0.04em;
-    margin-bottom: 40px;
+    color: #000;
+    margin: 40px 0;
     font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
+
+
 
 .projectDescription {
     --minFontSize: 18px;
@@ -55,13 +58,14 @@
 }
 
 h2 { 
-    --minFontSize: 32px;
-    --maxFontSize: 80px;
-    --scaler: 10vw;
+    --minFontSize: 16px;
+    --maxFontSize: 44px;
+    --scaler: 2vw;
     font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
     line-height: 110%;
-    margin-bottom: 100px;
+    margin-bottom: 16px;
     max-width: 40vw;
+    font-weight: 400;
 }
 
 .hero__paragraph { 
