@@ -1,32 +1,21 @@
-html {
-    cursor: none;
+* {
+    cursor: none; 
     scroll-behavior: smooth;
 }
 
 
 body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    overscroll-behavior: none;
-    transition: 0.3s ease-out;
-    max-width: 100%;
-    width: 100%;
-}   
+    width: 100vw;
+} 
 
 .globalWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
     row-gap: 100px;
-}
-
-.fullscreen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 80vh;
 }
 
 .hero {
@@ -136,7 +125,7 @@ body {
     place-items: center;
     --color: rgba(199, 199, 199, 0.7);
     z-index: 999;
-    mix-blend-mode: screen;
+    mix-blend-mode: exclusion;
     transform: translate(-50%, -50%);
 }
 

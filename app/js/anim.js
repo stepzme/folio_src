@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
       pin: true,
       // anticipatePin: 1,
       start: "top top",
-      end: () => document.getElementsByClassName('hero').offsetHeight + document.getElementsByClassName('projects').offsetHeight + document.getElementsByClassName('fullscreen').offsetHeight + document.querySelector(".pin-wrap").offsetHeight,
+      end: () => document.getElementsByClassName('hero').offsetHeight + document.getElementsByClassName('projects').offsetHeight + document.getElementsByClassName('slider').offsetHeight + document.querySelector(".pin-wrap").offsetHeight,
     },
     x: -horizontalScrollLength,
     ease: "none"
@@ -58,6 +58,7 @@ window.addEventListener("load", function () {
   ScrollTrigger.refresh();
 });
 
-let scrollFix = document.getElementsByClassName(".globalWrapper");
+ScrollTrigger.addEventListener('refresh', () => scroller.update())
 
-scrollFix.style.overflow = hidden;
+
+ScrollTrigger.refresh()
