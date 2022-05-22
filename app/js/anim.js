@@ -47,7 +47,6 @@ window.addEventListener("load", function () {
       pin: true,
       // anticipatePin: 1,
       start: "top top",
-      markers: true,
       end: () => document.getElementsByClassName('hero').offsetHeight + document.getElementsByClassName('projects').offsetHeight + document.getElementsByClassName('fullscreen').offsetHeight + document.querySelector(".pin-wrap").offsetHeight,
     },
     x: -horizontalScrollLength,
